@@ -4,10 +4,13 @@ import './Products.css';
 function Products() {
   return (
     <section className="products">
-      {['product1.jpg', 'product2.jpg', 'product3.jpg', 'product4.jpg'].map((product, index) => (
+      {['Rectangle90.jpeg', 'Rectangle91.jpeg', 'Rectangle90.jpeg', 'Rectangle91.jpeg'].map((product, index) => (
         <div className="product" key={index}>
-          <img src={`/path-to-your-image/${product}`} alt={`Product ${index + 1}`} />
+          <img src={`/img/${product}`} alt={`Product ${index + 1}`} />
+          <div class="overlay">
+          <h2>CUSTOM ITEMS</h2>
           <a href="#" className="btn">Shop Now</a>
+          </div>
         </div>
       ))}
     </section>
