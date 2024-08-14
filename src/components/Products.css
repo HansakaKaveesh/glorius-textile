@@ -1,0 +1,25 @@
+.products {
+    display: flex;
+    justify-content: space-around;
+    background-color: #5b3b1e;
+    padding: 40px 0;
+   
+}
+
+.product {
+    position: relative;
+    max-width: 23%;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product .btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff0000;
+}

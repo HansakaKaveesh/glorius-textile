@@ -1,0 +1,21 @@
+.flash-sale {
+    display: flex;
+    padding: 50px 20px;
+    background-color: #f3e2c6;
+    align-items: center;
+}
+
+.flash-sale img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.flash-sale-text {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.flash-sale-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
