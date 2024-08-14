@@ -1,5 +1,5 @@
 import React from 'react';
-import './FlashSale.css'; // We'll add CSS later
+import './FlashSale.css'; 
 
 function FlashSale() {
   return (

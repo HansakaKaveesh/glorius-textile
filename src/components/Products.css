@@ -24,7 +24,7 @@
     background-color: #ff0000;
 }
 .btn:hover {
-    background-color: #ff5e57; /* Lighter red on hover */
+    background-color: #ff5e57;
 }
 
 .overlay {
@@ -37,7 +37,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.4); /* Transparent black overlay */
+    background-color: rgba(0, 0, 0, 0.4); 
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
