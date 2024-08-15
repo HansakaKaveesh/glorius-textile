@@ -4,29 +4,41 @@ import './Footer.css';
 function Footer() {
   return (
     <footer>
-      <div className="footer-info">
-        <div className="textile-services">
-          <h3>Textile Services</h3>
+      <div class="footer-container">
+      <div class="footer-section">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      </div>
+        <div class="footer-section">
+        <h2>Quick Links</h2>
           <ul>
-            <li>Patch Fabric Works</li>
-            <li>Garment Stitching</li>
-            <li>Pattern, Art Making</li>
-            <li>Stone Work Embroidery</li>
-            <li>Computerised Embroidery</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div className="contact-info">
-          <h3>Contact Us</h3>
-          <p>4789 Melmorn Street, Zakila Ton Mashintron Town</p>
-          <p>Phone: (+011) 123 456 7890</p>
-          <p>Email: info@example.com</p>
-        </div>
-      </div>
-      <div className="footer-social">
+      
+      <div class="footer-section">
+      <h2>Follow Us</h2>
+      <div className="social-icons">
         <a href="#"><img src="/path-to-your-image/facebook-icon.png" alt="Facebook" /></a>
         <a href="#"><img src="/path-to-your-image/instagram-icon.png" alt="Instagram" /></a>
         <a href="#"><img src="/path-to-your-image/twitter-icon.png" alt="Twitter" /></a>
       </div>
+      </div>  
+      
+      <div class="footer-section">
+                <h2>Contact Us</h2>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Street Name, City, Country</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div> 
     </footer>
   );
 }

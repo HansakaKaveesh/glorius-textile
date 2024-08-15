@@ -30,7 +30,7 @@
   
   .nav ul li a:hover {
     background-color: #c3a763;
-    border-radius: 10px;
+    border-radius: 0px;
   }
   
   .dropdown-menu {
@@ -38,7 +38,7 @@
     top: 100%;
     left: 0;
     background-color: #785c2b8f;
-    border-radius: 10px;
+    border-radius: 0px;
     list-style: none;
     margin: 0;
     padding: 10px 0;
