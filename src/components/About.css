@@ -7,15 +7,41 @@
 }
 
 .about-text {
-    width: 50%;
+    max-width: 50%;
+    text-align: center;
 }
 
+
 .about-text h2 {
-    font-size: 36px;
+    font-size: 3rem;
+    color: #7a572b;
     margin-bottom: 20px;
 }
 
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
 .about img {
+    background-size: cover;
+    background-position: center;
     width: 40%;
-    border-radius: 10px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-text {
+    writing-mode:vertical-lr;
+    text-orientation: mixed;
+    font-size: 3rem;
+    color: #7a572b;
+    font-weight: bold;
+    text-align: center;
+
 }
