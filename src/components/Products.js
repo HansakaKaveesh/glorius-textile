@@ -1,20 +1,28 @@
 import React from 'react';
 import './Products.css'; 
 
-function Products() {
-  return (
-    <section className="products">
-      {['Rectangle90.jpeg', 'Rectangle91.jpeg', 'Rectangle90.jpeg', 'Rectangle91.jpeg'].map((product, index) => (
-        <div className="product" key={index}>
-          <img src={`/img/${product}`} alt={`Product ${index + 1}`} />
-          <div class="overlay">
-          <h2>CUSTOM ITEMS</h2>
-          <a href="#" className="btn">Shop Now</a>
-          </div>
+const Products = () => {
+    const items = [
+        { id: 1, src: 'img/Rectangle90.jpeg', alt: 'Custom Item 1', name: 'Scarf Collection' },
+        { id: 2, src: 'img/Rectangle90.jpeg', alt: 'Custom Item 2', name: 'Winter Essentials' },
+        { id: 3, src: 'img/Rectangle92.jpeg', alt: 'Custom Item 3', name: 'Bold Colors' },
+        { id: 4, src: 'img/Rectangle92.jpeg', alt: 'Custom Item 4', name: 'Autumn Vibes' },
+        
+    ];
+
+    return (
+        <div className="container">
+            {items.map((item) => (
+                <div key={item.id} className={`item item-${item.id}`}>
+                    <img src={item.src} alt={item.alt} />
+                    <div className="overlay">
+                        <h2>{item.name}</h2>
+                        <button>SHOP NOW</button>
+                    </div>
+                </div>
+            ))}
         </div>
-      ))}
-    </section>
-  );
-}
+    );
+};
 
 export default Products;

@@ -14,7 +14,6 @@ function About() {
         </p>
       </div>
       <img src="/IMG/Rectangle97.jpeg" alt="Fabric" />
-      <h1 class="vertical-text">ABOUT US</h1>
     </section>
   );
 }

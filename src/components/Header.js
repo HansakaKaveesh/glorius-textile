@@ -2,28 +2,31 @@ import React, { useState } from 'react';
 import './Header.css';
 
 function Header() {
-  const [dropdown, setDropdown] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const handleMouseEnter = () => {
-    setDropdown(true);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
-  const handleMouseLeave = () => {
-    setDropdown(false);
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
   };
 
   return (
     <header className="header">
       <nav className="nav">
-        <ul>
+        <div className="menu-icon" onClick={toggleMenu}>
+          &#9776; {/* Hamburger icon */}
+        </div>
+        <ul className={menuOpen ? "nav-menu open" : "nav-menu"}>
           <li><a href="#">Home</a></li>
-          <li
-            className="dropdown"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+          <li 
+            className="dropdown" 
+            onClick={toggleDropdown}
           >
-            <a href="#">Product</a>
-            {dropdown && (
+            <a href="">Product</a>
+            {dropdownOpen && (
               <ul className="dropdown-menu">
                 <li><a href="#">Product 1</a></li>
                 <li><a href="#">Product 2</a></li>
