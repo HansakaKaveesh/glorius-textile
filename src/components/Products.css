@@ -12,19 +12,17 @@ body {
     gap: 50px;
     padding: 50px;
     max-width: 1200px;
-    margin:auto;
+    margin: auto;
 }
 
 .container .item {
     position: relative;
-    
 }
 
 .container .item img {
     width: 100%;
     height: auto;
     display: block;
-    
 }
 
 .overlay {
@@ -41,10 +39,9 @@ body {
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
-    
 }
 
-.container:hover .overlay {
+.container .item:hover .overlay {
     opacity: 1;
 }
 
@@ -82,4 +79,31 @@ body {
 .item-4 {
     grid-column: span 1;
     grid-row: span 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .item-1,
+    .item-2,
+    .item-3,
+    .item-4 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .overlay h2 {
+        font-size: 20px;
+    }
+
+    .overlay button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }
